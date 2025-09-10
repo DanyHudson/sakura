@@ -1,8 +1,29 @@
-h1 {
-  color: hotpink;
+h1,
+h2 {
+  color: white;
   text-align: center;
 }
+
+h1 {
+  font-size: 64px;
+  margin-bottom: 20px;
+}
+
 h2 {
-  color: orange;
-  text-align: center;
-}   
+  font-size: 32px;
+  margin-bottom: 30%;
+}
+
+section {
+  height: 100vh;
+  width: 100%;
+  background-image: url('./../../assets/img/1_hero/JPG/hero_bg.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+}
