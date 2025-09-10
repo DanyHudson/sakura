@@ -1,11 +1,11 @@
 import { Component, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { RouterOutlet } from '@angular/router';
-import { LandingPageComponent } from './landingPage/landingPage.component';
+import { LandingPage } from './landingPage/landingPage';
 
 @Component({
   selector: 'app-root',
-  imports: [CommonModule, RouterOutlet, LandingPageComponent],
+  imports: [CommonModule, RouterOutlet, LandingPage],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

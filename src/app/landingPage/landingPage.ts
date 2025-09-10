@@ -8,6 +8,6 @@ import { CommonModule } from "@angular/common";
     template: '<h1>Hallo Welt!</h1>',
     styles: ['h1 {color: hotpink; text-align: center;}']
 })
-export class LandingPageComponent {
+export class LandingPage {
 
 }
