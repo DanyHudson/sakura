@@ -1,0 +1,17 @@
+app-navbar {
+    display: flex;
+    justify-content: space-between;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    height: 80px;
+    width: 80%;
+}
+
+nav img {
+    height: 60px;
+}
