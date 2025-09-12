@@ -1,17 +1,52 @@
-app-navbar {
-    display: flex;
-    justify-content: space-between;
-}
+// app-navbar {
+//     display: flex;
+//     justify-content: space-between;
+// }
 
 nav {
+    width: 100%;
+    padding: 32px;
     display: flex;
     justify-content: space-between;
+
+    >img {
+        cursor: pointer;
+        width: 64px;
+        height: 64px;
+    }
+
+    >div {
+        width: 350px;
+        display: flex;
+        justify-content: space-between;
+        gap: 24px;
+
+        >a {
+            &:hover {
+                border-bottom: 2px solid white;
+                color: red;
+            }
+        }
+    }
+
     align-items: center;
-    padding: 10px 20px;
     height: 80px;
-    width: 80%;
+
 }
 
-nav img {
-    height: 60px;
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.phone-btn {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    width: 180px;
+    cursor: pointer;
+    border: 1px solid white;
+    padding: 8px 16px;
+    border-radius: 16px;
+    background-color: darkred;
 }
