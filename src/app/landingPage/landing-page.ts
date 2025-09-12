@@ -7,8 +7,8 @@ import { Navbar } from "./navbar/navbar";
   standalone: true,
   imports: [CommonModule, Navbar],
   template: `
-    <app-navbar></app-navbar>
     <section class="">
+    <app-navbar></app-navbar>
       <h1 class="font-Raleway">SAKURA RAMEN</h1>
       <h2 class="font-Raleway">BEST RAMEN IN TOWN</h2>
     </section>
