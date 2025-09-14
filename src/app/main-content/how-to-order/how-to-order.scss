@@ -1,0 +1,32 @@
+.howTo {
+    /* border: 1px solid rgb(19, 236, 55); */
+    width: 76vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-bottom: 120px;
+    padding-top: 120px;
+}
+
+.steps-box {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* flex-wrap: wrap; */
+    width: 76vw;
+}
+
+.steps {
+    padding: 0px 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.steps img {
+    width: 128px;
+    padding-bottom: 16px;
+}

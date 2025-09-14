@@ -1,13 +1,10 @@
-// app-navbar {
-//     display: flex;
-//     justify-content: space-between;
-// }
 
 nav {
     width: 100%;
     padding: 32px;
     display: flex;
     justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
 
     >img {
         cursor: pointer;
@@ -16,22 +13,23 @@ nav {
     }
 
     >div {
-        width: 350px;
+        // width: 350px;
         display: flex;
         justify-content: space-between;
         gap: 24px;
 
         >a {
             &:hover {
-                border-bottom: 2px solid white;
-                color: red;
+                // border-bottom: 2px solid white;
+                color:  orange;
             }
         }
     }
 
     align-items: center;
     height: 80px;
-
+    position: absolute;
+    top: 12px;
 }
 
 a {
@@ -42,11 +40,25 @@ a {
 .phone-btn {
     display: flex;
     align-items: center;
-    gap: 16px;
-    width: 180px;
+    justify-items: space-between;
+    // width: 178px;
+    // width: auto;
+    gap: 4px !important;
     cursor: pointer;
     border: 1px solid white;
-    padding: 8px 16px;
-    border-radius: 16px;
+    padding: 8px 12px;
+    border-radius: 12px;
     background-color: darkred;
+    >a {
+        font-weight: 600;
+        &:hover {
+            border-bottom: none !important;
+            color: white;
+        }
+    }
+    >img {
+        width: 19px;
+        height: 19px;
+        padding-top: 2px;
+    }
 }
