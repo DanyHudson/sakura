@@ -1,3 +1,10 @@
+@import './../../../styles.scss';
+
+@mixin defaultFont() {
+    font-family: 'Raleway', sans-serif;
+    color: $white;
+}
+
 /* :::::  OUR MENU  :::::  */
 .our-menu-container {
     width: 100%;
@@ -20,7 +27,8 @@
     padding: 120px 0px 120px 0px;
 
     >h2 {
-        font-family: 'Raleway', sans-serif;
+        // font-family: 'Raleway', sans-serif;
+        @include defaultFont();
         font-size: 32px;
         padding-bottom: 40px;
         color: rgb(44, 38, 4);
@@ -41,13 +49,6 @@
     justify-content: flex-end;
     align-items: center;
 }
-
-// .meal-left h3,
-// .meal-right h3 {
-//     padding: 0px;
-//     margin: 0px;
-//     display: flex;
-// }
 
 .meal-left table,
 .meal-right table {
