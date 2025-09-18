@@ -1,8 +1,9 @@
-@import './../../../styles.scss';
+@use './../../../styles.scss' as*;
 
-@mixin defaultFont() {
+@mixin defaultFont($c:$white, $fw:400) {
     font-family: 'Raleway', sans-serif;
-    color: $white;
+    color: $c;
+    font-weight: $fw;
 }
 
 /* :::::  OUR MENU  :::::  */
@@ -28,7 +29,7 @@
 
     >h2 {
         // font-family: 'Raleway', sans-serif;
-        @include defaultFont();
+        @include defaultFont($c:$white, $fw:800);
         font-size: 32px;
         padding-bottom: 40px;
         color: rgb(44, 38, 4);
@@ -52,10 +53,11 @@
 
 .meal-left table,
 .meal-right table {
-    font-family: 'Raleway', sans-serif;
+    // font-family: 'Raleway', sans-serif;
     font-size: 28px;
     font-weight: bold;
     width: 44vw;
+    @include defaultFont($c:$black, $fw:400);
 }
 
 .prices {

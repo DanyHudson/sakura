@@ -1,18 +1,15 @@
-@import './../../../../styles.scss';
+@use './../../../../styles.scss' as*;
 
-@mixin dFlex() {
-    display: flex;
-    align-items: center;
-}
+
 
 nav {
     width: 100%;
     padding: 32px;
     // display: flex;
-    justify-content: space-between;
+    // justify-content: space-between;
     font-family: 'Raleway', sans-serif;
 
-    @include dFlex();
+    @include dFlex($jc: space-between, $ai: center, $fd: row);
 
     >img {
         cursor: pointer;
@@ -21,9 +18,9 @@ nav {
     }
 
     >div {
-        @include dFlex();
-        justify-content: space-between;
-        gap: 24px;
+        @include dFlex($jc: space-between, $ai: center, $fd: row);
+        // justify-content: space-between;
+        gap: 32px;
 
         >a {
             &:hover {
@@ -71,4 +68,9 @@ a {
         height: 19px;
         padding-top: 2px;
     }
+}
+
+.nav-links {
+    @include dFlex($jc: space-between, $ai: center, $fd: row);
+    gap: 32px;
 }

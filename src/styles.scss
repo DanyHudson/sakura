@@ -52,3 +52,11 @@ html {
 $dark_red: rgb(139,0,0);
 $orange: rgb(247, 161, 108);
 $white: rgb(255, 255, 255);
+$black: rgb(0, 0, 0);
+
+@mixin dFlex($jc: center, $ai: center, $fd: column) {
+    display: flex;
+    justify-content: $jc;
+    align-items: $ai;
+    flex-direction: $fd;
+}
