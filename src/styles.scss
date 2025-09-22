@@ -60,3 +60,12 @@ $black: rgb(0, 0, 0);
     align-items: $ai;
     flex-direction: $fd;
 }
+
+@mixin defaultA($c:$white, $hoverC:$orange) {
+    text-decoration: none;
+    color: $c;
+
+    &:hover {
+        color: $hoverC;
+    }
+}

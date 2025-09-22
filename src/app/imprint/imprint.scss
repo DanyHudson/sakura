@@ -1,0 +1,14 @@
+@use './../../styles.scss' as *;
+
+
+.imprint-container {
+    @include dFlex($jc: center, $ai: center, $fd: column);
+    width: 100%;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+    // flex-direction: column;
+    padding: 0px;
+    margin: 0px;
+    font-family: 'Raleway', sans-serif;
+}
