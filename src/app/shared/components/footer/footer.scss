@@ -1,3 +1,6 @@
+@use './../../../../styles.scss' as*;
+
+
 /* :::::  FOOTER :::::  */
 footer {
     background-color: rgb(44, 38, 4);
@@ -21,4 +24,9 @@ footer {
     width: 40px;
     height: 40px;
     padding-left: 16px;
+}
+
+.soc-med a {
+    @include defaultA($c:$white, $hoverC:$orange);
+    font-family: 'Raleway', sans-serif;
 }
