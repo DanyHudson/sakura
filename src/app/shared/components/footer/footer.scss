@@ -8,6 +8,8 @@ footer {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: auto;
+    border-top: 2px solid $orange;
 
 }
 
@@ -27,6 +29,6 @@ footer {
 }
 
 .soc-med a {
-    @include defaultA($c:$white, $hoverC:$orange);
+    @include defaultA($c: $white, $hoverC: $orange);
     font-family: 'Raleway', sans-serif;
 }

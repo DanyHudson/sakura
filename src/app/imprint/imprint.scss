@@ -9,6 +9,12 @@
     // align-items: center;
     // flex-direction: column;
     padding: 0px;
-    margin: 0px;
+    margin-top: 160px;
+    margin-bottom: 160px;
     font-family: 'Raleway', sans-serif;
+
+}
+
+.imprint-content a {
+    @include defaultA($c:$dark_red, $hoverC:$orange);
 }

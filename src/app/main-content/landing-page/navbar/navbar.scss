@@ -37,8 +37,10 @@ nav {
 }
 
 a {
-    text-decoration: none;
-    color: $white;
+    @include defaultA($c:$white, $hoverC:$orange);
+    font-family: 'Raleway', sans-serif;
+    // text-decoration: none;
+    // color: $white;
 }
 
 .phone-btn {
